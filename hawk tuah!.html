@@ -1,0 +1,118 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>l'S DOX FOLDER</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(32, 32, 32);
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 1); /* Pitch black */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2rem;
+            z-index: 10;
+            cursor: pointer;
+        }
+
+        /* Hidden content */
+        .content {
+            display: none;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .pop-up {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+            max-width: 500px;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* Title */
+        .title {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Circular image */
+        .pop-up img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .info {
+            margin-top: 10px;
+            color: #fff;
+            text-align: left; /* Align the text in the info section to the left */
+        }
+    </style>
+
+    <body>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay">
+    Click to get ffavzexis details
+</div>
+
+<!-- Hidden Content -->
+<div class="content" id="content">
+    <div class="title">HALL OF CLOWNS</div>
+    <div class="pop-up">
+        <img src="https://cdn.discordapp.com/avatars/1207005955879866409/833bcd1d6376d1018d77398e0164f990.png?size=1024;" alt="Cropped Image">
+        <div class="info">Name: Brayden 🤡</div>
+        <div class="info">State: Kentucky</div>
+        <div class="info">City: raccon</div>
+        <div class="info">IP Address: 69.176.33.157</div>
+        <div class="info">Reason: Thinks he's tuff because he knows how to code and ddoses people 🤡</div>
+    </div>
+</div>
+
+<!-- Audio element -->
+<audio id="backgroundMusic" src="lean mp3 - Made with Clipchamp.mp3" loop=""></audio>
+
+<script>
+    // Get elements
+    const overlay = document.getElementById('overlay');
+    const content = document.getElementById('content');
+    const music = document.getElementById('backgroundMusic');
+
+    // Function to remove overlay and play music
+    overlay.addEventListener('click', function() {
+        overlay.style.display = 'none';  // Hide the overlay
+        content.style.display = 'flex';  // Show the content
+        music.play();  // Play music
+    });
+</script>
+
+
+
+</body></html>
